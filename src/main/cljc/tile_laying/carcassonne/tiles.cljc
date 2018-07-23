@@ -4,96 +4,96 @@
 
 (def tiles
   {:a {:features #{:cloister}
-       :faces [:field :field :field :field]
+       :edges [:field :field :field :field]
        :corners #{[0 1] [1 2] [2 3] [3 0]}
-       :ascii ["..."
-               ".#."
-               "..."]}
+       :ascii [[\. \. \.]
+               [\. \# \.]
+               [\. \. \.]]}
 
    :b {:features #{:cloister}
-       :faces [:field :field :road :field]
+       :edges [:field :field :road :field]
        :corners #{[0 1] [3 0]}
-       :ascii ["..."
-               ".#."
-               ".|."]}
+       :ascii [[\. \. \.]
+               [\. \# \.]
+               [\. \| \.]]}
 
    :c {:features #{:pennant}
-       :faces [:city :city :city :city]
+       :edges [:city :city :city :city]
        :corners #{[0 1] [1 2] [2 3] [3 0]}
-       :ascii ["ooo"
-               "ooo"
-               "ooo"]}
+       :ascii [[\o \o \o]
+               [\o \o \o]
+               [\o \o \o]]}
 
-   :d {:faces [:city :city :field :city]
+   :d {:edges [:city :city :field :city]
        :corners #{[0 1] [3 0]}
-       :ascii ["ooo"
-               "ooo"
-               "o.o"]}
+       :ascii [[\o \o \o]
+               [\o \o \o]
+               [\o \. \o]]}
 
    :e {:features #{:pennant}
-       :faces [:city :city :field :city]
+       :edges [:city :city :field :city]
        :corners #{[0 1] [3 0]}
-       :ascii ["ooo"
-               "ooo"
-               "o.o"]}
+       :ascii [[\o \o \o]
+               [\o \o \o]
+               [\o \. \o]]}
 
-   :f {:faces [:city :city :road :city]
+   :f {:edges [:city :city :road :city]
        :corners #{[0 1] [3 0]}
-       :ascii ["ooo"
-               "ooo"
-               "o|o"]}
+       :ascii [[\o \o \o]
+               [\o \o \o]
+               [\o \| \o]]}
 
    :g {:features #{:pennant}
-       :faces [:city :city :road :city]
+       :edges [:city :city :road :city]
        :corners #{[0 1] [3 0]}
-       :ascii ["ooo"
-               "ooo"
-               "o|o"]}
+       :ascii [[\o \o \o]
+               [\o \o \o]
+               [\o \| \o]]}
 
-   :h {:faces [:city :field :field :city]
+   :h {:edges [:city :field :field :city]
        :corners #{[1 2] [3 0]}
-       :ascii ["ooo"
-               "o.."
-               "o.."]}
+       :ascii [[\o \o \o]
+               [\o \. \.]
+               [\o \. \.]]}
 
    :i {:features #{:pennant}
-       :faces [:city :field :field :city]
+       :edges [:city :field :field :city]
        :corners #{[1 2] [3 0]}
-       :ascii ["ooo"
-               "o.."
-               "o.."]}
+       :ascii [[\o \o \o]
+               [\o \. \.]
+               [\o \. \.]]}
 
-   :j {:faces [:city :road :road :city]
+   :j {:edges [:city :road :road :city]
        :corners #{[1 2] [3 0]}
-       :ascii ["ooo"
-               "o+-"
-               "o|."]}
+       :ascii [[\o \o \o]
+               [\o \+ \-]
+               [\o \| \.]]}
 
    :k {:features #{:pennant}
-       :faces [:city :road :road :city]
+       :edges [:city :road :road :city]
        :corners #{[1 2] [3 0]}
-       :ascii ["ooo"
-               "o+-"
-               "o|."]}
+       :ascii [[\o \o \o]
+               [\o \+ \-]
+               [\o \| \.]]}
 
-   :v {:faces [:field :field :road :road]
+   :v {:edges [:field :field :road :road]
        :corners #{[0 1] [2 3]}
-       :ascii ["..."
-               "-+."
-               ".|."]}
+       :ascii [[\. \. \.]
+               [\- \+ \.]
+               [\. \| \.]]}
 
-   :w {:faces [:field :road :road :road]
-       :ascii ["..."
-               "-.-"
-               ".|."]}
+   :w {:edges [:field :road :road :road]
+       :ascii [[\. \. \.]
+               [\- \. \-]
+               [\. \| \.]]}
 
-   :x {:faces [:road :road :road :road]
-       :ascii [".|."
-               "-.-"
-               ".|."]}
+   :x {:edges [:road :road :road :road]
+       :ascii [[\. \| \.]
+               [\- \. \-]
+               [\. \| \.]]}
 
-   :y {:faces [:city :road :field :road]
+   :y {:edges [:city :road :field :road]
        :corners #{[1 3]}
-       :ascii ["ooo"
-               "---"
-               "..."]}})
+       :ascii [[\o \o \o]
+               [\- \- \-]
+               [\. \. \.]]}})

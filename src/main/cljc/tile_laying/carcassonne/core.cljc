@@ -2,5 +2,5 @@
 
 (def initial-state
   {:tile-shape :square
-   :tile-faces 4
+   :tile-edges 4
    :board {}})
